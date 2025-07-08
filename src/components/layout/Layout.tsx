@@ -5,7 +5,7 @@ import { BaseComponentProps } from '../../types';
 
 const Layout: React.FC<BaseComponentProps> = ({ children }) => {
   return (
-    <div className="h-screen flex flex-col bg-gray-50 dark:bg-gray-900">
+    <div className="min-h-screen flex flex-col bg-gray-50 dark:bg-gray-900">
       <Header />
       <div className="flex-1 flex overflow-hidden">
         <Sidebar />

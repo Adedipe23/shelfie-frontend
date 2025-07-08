@@ -8,6 +8,7 @@ import tauriApi from '../services/tauri';
 import Button from '../components/ui/Button';
 import Input from '../components/ui/Input';
 import Card from '../components/ui/Card';
+import Logo from '../assets/shelfie.png';
 
 const Login: React.FC = () => {
   const [email, setEmail] = useState('');
@@ -82,9 +83,9 @@ const Login: React.FC = () => {
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-50 dark:bg-gray-900 p-4">
-      <div className="w-full max-w-md">
-        <div className="text-center mb-8">
-          <h1 className="text-3xl font-bold text-primary">ISMS</h1>
+      <div className="w-full max-w-md justify-center">
+        <img src={Logo} className='' />
+        <div className=" mb-8">
           <p className="text-muted-foreground mt-2">Integrated Supermarket Management System</p>
         </div>
 

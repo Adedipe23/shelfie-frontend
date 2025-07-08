@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { useAuthStore } from '../../store/authStore';
 import { useAppStore } from '../../store/appStore';
 import { NavItem } from '../../types';
+import Logo from '../../assets/shelfie.png';
 
 // Navigation items with permissions
 const navigationItems: NavItem[] = [
@@ -138,7 +139,8 @@ const Sidebar: React.FC = () => {
   return (
     <div className="w-64 bg-white dark:bg-gray-800 border-r border-gray-200 dark:border-gray-700 h-full flex flex-col">
       <div className="p-6">
-        <h1 className="text-2xl font-bold text-primary">ISMS</h1>
+        <img src={Logo} width={100} />
+      
         <p className="text-sm text-muted-foreground">Supermarket Management</p>
       </div>
       
